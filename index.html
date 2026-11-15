@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Gabe Novoseller | Tulane Freeman</title>
-<meta name="description" content="Gabe Novoseller, sophomore at Tulane University's A.B. Freeman School of Business, pursuing investment banking in New York.">
+<title>Gabriel Novoseller | Tulane Freeman</title>
+<meta name="description" content="Gabriel Novoseller, Finance student at Tulane University's A.B. Freeman School of Business, focused on investment banking.">
 <script>
   (function () {
     try {
@@ -53,22 +53,23 @@
   section:nth-of-type(even) { background: var(--bg-alt); }
   h2 { font-size: 1.8rem; margin: 0 0 28px; }
   h2::after { content: ""; display: block; width: 48px; height: 3px; background: var(--accent); margin-top: 10px; border-radius: 2px; }
-  .grid { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+  h3.sub { font-size: 1.05rem; margin: 32px 0 14px; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; }
+  .grid { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
   .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 22px;
     box-shadow: var(--shadow); transition: transform .2s; }
   .card:hover { transform: translateY(-3px); }
-  .card h3 { margin: 0 0 4px; font-size: 1.1rem; }
+  .card h3 { margin: 0 0 2px; font-size: 1.1rem; }
+  .role { margin: 0; font-weight: 600; font-style: italic; }
   .meta { color: var(--muted); font-size: .9rem; margin: 0 0 10px; }
   .card ul { margin: 0; padding-left: 18px; color: var(--muted); }
-  .edit { background: #fff4c2; color: #5a4300; padding: 0 4px; border-radius: 3px; font-size: .9em; }
-  [data-theme="dark"] .edit { background: #4a3d0a; color: #ffe58a; }
+  .card li { margin-bottom: 6px; }
   .tags { display: flex; flex-wrap: wrap; gap: 10px; list-style: none; padding: 0; margin: 0; }
   .tags li { background: var(--accent-soft); border: 1px solid var(--border); padding: 6px 14px; border-radius: 999px; font-size: .92rem; }
   .contact-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; font-size: 1.05rem; }
   footer { padding: 28px 0; text-align: center; color: var(--muted); font-size: .9rem; border-top: 1px solid var(--border); }
   .reveal { opacity: 0; transform: translateY(14px); transition: opacity .6s, transform .6s; }
   .reveal.in { opacity: 1; transform: none; }
-  @media (max-width: 720px) { .links { display: none; } section { padding: 56px 0; } .hero { padding: 64px 0; } }
+  @media (max-width: 760px) { .links { display: none; } section { padding: 56px 0; } .hero { padding: 64px 0; } }
   @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; } * { transition: none !important; } .reveal { opacity: 1; transform: none; }
   }
@@ -77,12 +78,13 @@
 <body>
 <header>
   <nav class="wrap" aria-label="Main">
-    <a class="brand" href="#top">Gabe Novoseller</a>
+    <a class="brand" href="#top">Gabriel Novoseller</a>
     <ul class="links">
       <li><a href="#about">About</a></li>
       <li><a href="#education">Education</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#activities">Activities</a></li>
+      <li><a href="#baseball">Baseball</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -94,7 +96,7 @@
   <div class="hero">
     <div class="wrap reveal">
       <div class="eyebrow">Tulane University · A.B. Freeman School of Business</div>
-      <h1>Gabe Novoseller</h1>
+      <h1>Gabriel Novoseller</h1>
       <p class="tag">Finance student at Tulane Freeman | Aspiring Investment Banker</p>
       <div class="btns">
         <a class="btn primary" href="#contact">Get in touch</a>
@@ -106,8 +108,9 @@
   <section id="about">
     <div class="wrap reveal">
       <h2>About</h2>
-      <p>I'm a sophomore at Tulane University's A.B. Freeman School of Business (Class of 2029). I grew up in New York and transferred to Tulane from the University of Colorado Boulder. I'm focused on breaking into investment banking in New York City, and over the long term I'm interested in buyside roles across private equity, credit, and hedge funds.</p>
-      <p>This past summer I got hands-on exposure to M&amp;A work, which confirmed my interest in banking. Outside the classroom I'm involved with Wall Street Krewe, the Tulane Real Estate Club, Tulane Club Baseball, and Phi Gamma Delta.</p>
+      <p>I'm a sophomore at Tulane University's A.B. Freeman School of Business, majoring in Finance (Class of 2029). I'm from Scarsdale, New York, and transferred to Tulane from the University of Colorado Boulder. I'm focused on breaking into investment banking in New York City.</p>
+      <p>This past summer I was an M&amp;A intern at Museum of Illusions, a private equity-backed global franchisor, where I built an LBO model for a ~$31M acquisition and helped put together the investment committee deck. Before that, I interned in real estate development at Lone Star Business Park, modeling returns on a ~$10.5M industrial flex project.</p>
+      <p>Outside of finance, I have a real passion for baseball. I'm a lefty pitcher and play for Tulane Club Baseball. I'm also a member of Wall Street Krewe and the Tulane Real Estate Club.</p>
     </div>
   </section>
 
@@ -117,13 +120,21 @@
       <div class="grid">
         <article class="card">
           <h3>Tulane University</h3>
-          <p class="meta">A.B. Freeman School of Business · Expected May 2029</p>
-          <ul><li>Major: <span class="edit">[add major]</span></li><li>Relevant coursework: <span class="edit">[add courses]</span></li></ul>
+          <p class="role">A.B. Freeman School of Business</p>
+          <p class="meta">New Orleans, LA · Expected May 2029</p>
+          <ul>
+            <li>Bachelor of Science in Management, Major: Finance</li>
+            <li>Coursework: Financial Accounting; AI and the Future of Business (in progress)</li>
+            <li>Activities: Wall Street Krewe, Tulane Real Estate Club, Tulane Club Baseball</li>
+          </ul>
         </article>
         <article class="card">
           <h3>University of Colorado Boulder</h3>
-          <p class="meta">Transferred to Tulane</p>
-          <ul><li><span class="edit">[add dates or details]</span></li></ul>
+          <p class="role">Transferred to Tulane</p>
+          <p class="meta">Boulder, CO</p>
+          <ul>
+            <li>Coursework: Business Analytics, Microeconomics, Macroeconomics, Statistics</li>
+          </ul>
         </article>
       </div>
     </div>
@@ -134,19 +145,33 @@
       <h2>Experience</h2>
       <div class="grid">
         <article class="card">
-          <h3>M&amp;A Experience</h3>
-          <p class="meta"><span class="edit">[Firm name]</span> · Summer 2026</p>
-          <ul><li><span class="edit">[What you worked on]</span></li><li><span class="edit">[Skill or result]</span></li></ul>
+          <h3>Museum of Illusions</h3>
+          <p class="role">M&amp;A Intern, Private Equity-Backed Global Franchisor</p>
+          <p class="meta">Phoenix, AZ · Jun 2026 to Aug 2026</p>
+          <ul>
+            <li>Built an LBO model for the ~$31M acquisition of an international franchisee, projecting the three financial statements to solve for IRR and MOIC across entry and exit cases</li>
+            <li>Compiled an investment committee deck benchmarking acquisition economics against the 70+ location global franchise base, and reviewed the LOI and franchise agreements against the model</li>
+            <li>Analyzed capital investment strategies across new builds, store refreshes, and M&amp;A, ranking uses of capital by expected return and payback period</li>
+          </ul>
         </article>
         <article class="card">
-          <h3>Intern, EQM</h3>
-          <p class="meta">Senior spring of high school</p>
-          <ul><li><span class="edit">[What you worked on]</span></li></ul>
+          <h3>Lone Star Business Park</h3>
+          <p class="role">Real Estate Development Intern, Industrial Flex Development</p>
+          <p class="meta">Buda, TX · Apr 2026 to May 2026</p>
+          <ul>
+            <li>Built a financial model sizing development returns to equity investors on a ~$10.5M project, flexing rents, absorption pace, construction costs, and exit cap rate</li>
+            <li>Developed lease-up assumptions for 56,000 SF of industrial flex space to drive stabilized NOI in a pro forma</li>
+            <li>Benchmarked comparable industrial developments on rents, concessions, and cap rates to validate underwriting</li>
+          </ul>
         </article>
         <article class="card">
-          <h3>Summer Camp Counselor</h3>
-          <p class="meta">Multiple summers</p>
-          <ul><li><span class="edit">[Camp name and responsibilities]</span></li></ul>
+          <h3>EQM Incorporated</h3>
+          <p class="role">Marketing Intern, Outsourced Sales &amp; Marketing Firm</p>
+          <p class="meta">New York, NY · Apr 2025 to Jun 2025</p>
+          <ul>
+            <li>Compiled business profiles on 50+ prospective clients so sales leads could tailor each pitch</li>
+            <li>Tracked the sales pipeline and conversion funnel, reporting closed sales by marketer to isolate the highest-converting outreach</li>
+          </ul>
         </article>
       </div>
     </div>
@@ -154,13 +179,41 @@
 
   <section id="activities">
     <div class="wrap reveal">
-      <h2>Leadership &amp; Activities</h2>
+      <h2>Activities &amp; Leadership</h2>
       <div class="grid">
-        <article class="card"><h3>Wall Street Krewe</h3><p class="meta">Member</p></article>
-        <article class="card"><h3>Tulane Real Estate Club</h3><p class="meta">Member</p></article>
-        <article class="card"><h3>Tulane Club Baseball</h3><p class="meta">Pitcher</p></article>
-        <article class="card"><h3>Phi Gamma Delta (FIJI)</h3><p class="meta">Member</p></article>
+        <article class="card">
+          <h3>Tulane Clubs</h3>
+          <p class="meta">Tulane University</p>
+          <ul>
+            <li>Wall Street Krewe</li>
+            <li>Tulane Real Estate Club</li>
+            <li>Tulane Club Baseball</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Beth El Day Camp | Breezemont Day Camp</h3>
+          <p class="role">Counselor</p>
+          <p class="meta">New Rochelle, NY | Armonk, NY · Jun 2022 to Aug 2026</p>
+          <ul>
+            <li>Co-led daily groups of 10 to 15 campers ages 3 to 8 across five summers, managing behavioral and conflict situations</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Phi Gamma Delta Fraternity</h3>
+          <p class="role">Member, University of Colorado Boulder</p>
+          <p class="meta">Boulder, CO · Sep 2025 to May 2026</p>
+          <ul>
+            <li>Helped organize chapter philanthropy fundraisers for events drawing 200+ attendees and raising $1,200+ for breast cancer awareness</li>
+          </ul>
+        </article>
       </div>
+    </div>
+  </section>
+
+  <section id="baseball">
+    <div class="wrap reveal">
+      <h2>Baseball</h2>
+      <p>Baseball has always been a big part of my life, and I have a real passion for the game. I'm a left-handed pitcher. I pitched in high school at the varsity level and for a summer club team, and today I play for Tulane Club Baseball.</p>
     </div>
   </section>
 
@@ -168,12 +221,21 @@
     <div class="wrap reveal">
       <h2>Skills</h2>
       <ul class="tags">
-        <li>Financial Modeling <span class="edit">(edit)</span></li>
-        <li>Excel <span class="edit">(edit)</span></li>
-        <li>Valuation <span class="edit">(edit)</span></li>
-        <li>PowerPoint <span class="edit">(edit)</span></li>
-        <li><span class="edit">[add skill]</span></li>
+        <li>Financial Modeling</li>
+        <li>LBO Modeling</li>
+        <li>Valuation</li>
+        <li>Market Research</li>
+        <li>Microsoft Excel</li>
+        <li>PowerPoint</li>
+        <li>Word</li>
       </ul>
+      <h3 class="sub">Certifications</h3>
+      <ul class="tags">
+        <li>A Simple Model: Accounting</li>
+        <li>A Simple Model: Excel Modeling</li>
+      </ul>
+      <h3 class="sub">Projects</h3>
+      <p>Built a personal CRM and investment research workflow using Notion and Claude Code.</p>
     </div>
   </section>
 
@@ -181,15 +243,16 @@
     <div class="wrap reveal">
       <h2>Contact</h2>
       <ul class="contact-list">
+        <li>Location: Scarsdale, NY</li>
         <li>Email: <a href="mailto:gabriel.novoseller@gmail.com">gabriel.novoseller@gmail.com</a></li>
-        <li>Phone: <a href="tel:+19142403590">914-240-3590</a></li>
+        <li>Phone: <a href="tel:+19142403590">(914) 240-3590</a></li>
         <li>LinkedIn: <a href="https://www.linkedin.com/in/gabrielnovoseller/" target="_blank" rel="noopener">linkedin.com/in/gabrielnovoseller</a></li>
       </ul>
     </div>
   </section>
 </main>
 
-<footer>&copy; <span id="yr"></span> Gabe Novoseller</footer>
+<footer>&copy; <span id="yr"></span> Gabriel Novoseller</footer>
 
 <script>
   (function () {
